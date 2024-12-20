@@ -1,0 +1,262 @@
+/* Importing the Lato Google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Colors used on page */
+/* Primary: #f4f4f4 */
+/* Secondary: #eb4442 */
+/* Accent1: #e6e6e6 */
+/* Accent2:#2d2b3e */
+
+/* Basic Styles */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  margin: 0;
+  /* Removes the bullet point before each list item */
+  list-style: none;
+}
+
+.btn-1 {
+  height: 38px;
+  background-color: #eb4442;
+  border: 0;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.light {
+  background-color: #e6e6e6;
+  color: #2d2b3e;
+}
+
+.dark {
+  background-color: #2d2b3e;
+  color: #e6e6e6;
+}
+
+.light, .dark {
+  padding: 15px;
+  margin: 10px 0;
+}
+
+/* Header */
+header {
+  background-color: #2d2b3e;
+  color: #e6e6e6;
+  border-bottom: 3px solid #eb4442;
+  padding: 5px 0;
+}
+
+header div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  /* Changing/Increasing the amount of vertical space that the ul takes up so the li elements can be centered vertically */
+  height: 100%;
+}
+
+header a {
+  color: #e6e6e6;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#highlight, #current a {
+  color: #eb4442;
+  font-weight: 700;
+}
+
+/* Selects all a elements except for the "HOME" a tag */
+header a:not(#current a):hover {
+  color: #ccc;
+  font-weight: 700;
+}
+
+/* Showcase */
+#showcase {
+  background-image: url("laptop.png");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+}
+
+#showcase div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+#showcase h1 {
+  font-size: 55px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+  background-color: #2d2b3e;
+  padding: 15px;
+  color: #e6e6e6;
+}
+
+#newsletter div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#newsletter input {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* Boxes */
+#boxes {
+  height: 400px;
+}
+
+#boxes .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+
+i {
+  font-size: 225px;
+}
+
+.fa-html5 {
+  color: #d45632;
+}
+
+.fa-css3-alt {
+  color: #2d50dc;
+}
+
+.fa-js {
+  color: #f3df50;
+}
+
+/* About */
+#about {
+  background-color: #2d2b3e;
+  padding: 20px;
+  color: #fff;
+}
+
+#about .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 50px;
+}
+
+/* Services */
+#services .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 50px;
+}
+
+#services ul {
+  /* Removes left padding */
+  padding: 0;
+}
+
+#services li {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 5px;
+  background-color: #e6e6e6;
+}
+
+#services .sidebar {
+  margin-top: 10px;
+}
+
+#services input, #services textarea {
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #2d2b3e;
+  color: #e6e6e6;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px; 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header .container,
+  #newsletter .container,
+  #boxes .container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  header ul {
+    padding: 0;
+  }
+
+  #boxes {
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  #showcase {
+    height: auto;
+  }
+
+  #newsletter {
+    text-align: center;
+  }
+
+  #newsletter button {
+    width: 260px;
+    margin-top: 10px;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  #about .container,
+  #services .container {
+    grid-template-columns: 100%;
+  }
+}

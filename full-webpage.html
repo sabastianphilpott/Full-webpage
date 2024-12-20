@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Matt's Web Design is a top notch web design company with a team that creates award-winning websites which promote your brand and increase your revenue to help grow and improve your business.">
+  <meta name="author" content="Matthew Riley">
+
+  <!-- Link to My Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/cb216a6a38.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <title>Matt's Web Design</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span id="highlight">Matt's</span> Web Design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li id="current">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <!-- Showcase -->
+  <section id="showcase">
+    <div class="container">
+      <h1>Quality Web Design at Reasonable Prices</h1>
+      <p>Matt's Web Design is a top notch web design company with a team that creates award-winning websites which promote your brand and increase your revenue to help grow and improve your business.</p>
+    </div>
+  </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email" name="email" title="Subscribe">
+          <button class="btn-1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  <!-- Boxes -->
+  <section id="boxes">
+    <div class="container">
+      <div class="box">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5 Markup</h3>
+        <p>We use HTML5 markup to build out our sites</p>
+      </div>
+      <div class="box">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3 Styling</h3>
+        <p>We use CSS3 styling to give our sites a great look</p>
+      </div>
+      <div class="box">
+        <i class="fab fa-js"></i>
+        <h3>JavaScript Functionality</h3>
+        <p>JavaScript is used to add superior functionality to our sites</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <article class="main-col">
+          <h1 class="page-title">About Us</h1>
+          <p>In the heart of Chicago, we are a passionate web design company dedicated to shaping your online identity. Our team creates captivating, responsive websites tailored to your brand's Windy City spirit.</p>
+          <p class="light">At Matt's Web Design, we blend Chicago's dynamic energy with top-tier design and development expertise. We're here to make your digital vision come alive and help your business thrive in the Windy City and beyond.</p>
+        </article>
+  
+        <aside class="sidebar">
+          <div class="light">
+            <h3>What We Do</h3>
+            <p>We create the most awe inspiring, top-quality, and award-winning websites for clients using HTML, CSS, & JavaScript which allow clients to grow their business to levels they never dreamed of!</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <article class="main-col">
+        <h1 class="page-title">Services</h1>
+        <ul>
+          <li>
+            <h3>Website Design</h3>
+            <p>Website Design that focuses on creating a quality design for your website</p>
+            <p>Pricing: $500 - $2,000</p>
+          </li>
+          <li>
+            <h3>Website Maintenance</h3>
+            <p>Website Maintenance that focuses on maintaining your website well</p>
+            <p>Pricing: $200 per month</p>
+          </li>
+          <li>
+            <h3>Website Hosting</h3>
+            <p>Website Hosting that focuses on hosting your website where it can be accessed</p>
+            <p>Pricing: $20 per month</p>
+          </li>
+        </ul>
+      </article>
+
+      <aside class="sidebar">
+        <div class="dark">
+          <h3>Request A Quote</h3>
+          
+          <!-- FormSubmit allows for an email address to be added to the form tag so that when the form is submitted the content/data in the form will be sent to the email added on the end of the "formsubmit.co" URL (NOTE: The "method" set for the form is POST not GET, because there is data being sent (AKA Posted) when the form request/submission is completed) -->
+          <form class="quote" action="https://formsubmit.co/matthew.riley@barren.kyschools.us" method="POST">
+            <div>
+              <label for="name">Name</label>
+              <br>
+              <input type="text" placeholder="Name" id="name" name="name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <br>
+              <input type="email" placeholder="Email" id="email" name="email">
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <br>
+              <textarea name="message" id="message" placeholder="Message"></textarea>
+            </div>
+            <button class="btn-1">Send</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <footer>
+    <!-- Option + G creates the Copyright symbol on a Mac -->
+    <p>Matt's Web Design, Copyright © 2024</p>
+   </footer>
+
+</body>
+</html>
